@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[PhotoAnnotationView setCalloutCellsWithAnnotation:]:PhotoAnnotationView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[annotation calloutCells]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoSelectViewController imagePickerController:didFinishPickingMediaWithInfo:]:PhotoSelectViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "metaData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoDetailController viewDidLoad]:PhotoDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[detail_data objectForKey:@&quot;{MakerApple}&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoAnnotationView drawRect:]:PhotoAnnotationView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.offsetFromParent">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoSelectViewController prepareForSegue:sender:]:PhotoSelectViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[segue identifier]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController mapView:didSelectAnnotationView:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[aView isSelected]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoSelectViewController locationManager:didUpdateLocations:]:PhotoSelectViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "location_manager.location.longitude">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController mapViewDidFinishLoadingMap:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapView.annotations">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController viewDidLoad]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "mapview.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__49-[PhotoViewController mapView:viewForAnnotation:]_block_invoke:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController mapView:didDeselectAnnotationView:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "aView.annotation ">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController on_btn_exif]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self annotation]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController replaceCalloutViewForCoordinates:inMap:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pMapView.selectedMarker">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController hudWasHidden:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dic_data objectForKey:@&quot;Coordinates&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[NSDictionary(MetadataDatasource) sgg_valueForPropertyAtIndexPath:]:NSDictionary+MetadataDatasource.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "str">
+            </PersistentString>
+            <PersistentString
+               value = "[info objectForKey:str]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoSelectViewController alertView:clickedButtonAtIndex:]:PhotoSelectViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "alertView.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
