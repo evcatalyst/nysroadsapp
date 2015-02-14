@@ -51,6 +51,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__49-[PhotoViewController mapView:viewForAnnotation:]_block_invoke:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[PhotoSelectViewController locationManager:didUpdateLocations:]:PhotoSelectViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -75,14 +83,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "__49-[PhotoViewController mapView:viewForAnnotation:]_block_invoke:PhotoViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "-[PhotoViewController mapView:didDeselectAnnotationView:]:PhotoViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -95,22 +95,6 @@
          <PersistentStrings>
             <PersistentString
                value = "[self annotation]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[PhotoViewController replaceCalloutViewForCoordinates:inMap:]:PhotoViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "pMapView.selectedMarker">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[PhotoViewController hudWasHidden:]:PhotoViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "[dic_data objectForKey:@&quot;Coordinates&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

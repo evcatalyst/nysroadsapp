@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^DisclosureTappedBlock)();
-typedef void(^RoadTappedBlock)();
 
 @interface GmapAnnotationView : UIView
 
@@ -21,9 +20,9 @@ typedef void(^RoadTappedBlock)();
 @property (weak, nonatomic) IBOutlet UIButton *btn_disclosure;
 
 - (IBAction)on_click_btn_disclosure:(id)sender;
-- (IBAction)on_click_btn_road:(id)sender;
 
 @property (nonatomic,copy) DisclosureTappedBlock onDisclosureTappedBlock;
-@property (nonatomic,copy) RoadTappedBlock onRoadTappedBlock;
+
+- (void)initialize;
 
 @end

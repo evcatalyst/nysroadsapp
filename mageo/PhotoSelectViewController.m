@@ -14,10 +14,7 @@
 
 //#import "EXF.h"
 
-#import "HandlePhoto.h"
 #import <ImageIO/ImageIO.h>
-
-#import <MobileCoreServices/UTCoreTypes.h>
 
 BOOL gLogging;
 
@@ -47,7 +44,6 @@ BOOL gLogging;
     
     // Set a delegate to receive location callbacks
     location_manager.delegate = self;
-    
     
 }
 
@@ -203,7 +199,9 @@ BOOL gLogging;
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
-int cnt = 0;
+//#define TEMPIMAGE_FILENAME           @"MyPhoto.jpg"
+//#define TEMPIMAGERECOMPRESS_FILENAME @"MyPhotoRecomp.jpg"
+
 
 - (void)imagePickerController:(UIImagePickerController *)picker
 didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -211,21 +209,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     exif_data = nil;
     
     img_selected = [info objectForKey:UIImagePickerControllerOriginalImage];
-    
-    CFUUIDRef uuid = CFUUIDCreate(NULL);
-    CFStringRef uuidString = CFUUIDCreateString(NULL, uuid);
-    CFRelease(uuid);
-    NSString *uniqueFileName = [NSString stringWithFormat:@"%@-%d.jpg", (__bridge NSString *)uuidString];
-    
-    NSString *saveJpgFile;
-    saveJpgFile = [ NSTemporaryDirectory() stringByAppendingPathComponent: @"MyPhoto.jpg" ];
-    //saveJpgFile = [ NSTemporaryDirectory() stringByAppendingPathComponent: [NSString stringWithFormat:@"myPhoto_%d.jpg", cnt++] ];
-    //saveJpgFile = [ NSTemporaryDirectory() stringByAppendingPathComponent: uniqueFileName ];
-    
-    [ UIImageJPEGRepresentation(img_selected, 1.0f) writeToFile:saveJpgFile atomically:YES];
-    
-    url_selected = [NSURL URLWithString:saveJpgFile];
-
     
     //if (picker.sourceType == UIImagePickerControllerSourceTypePhotoLibrary) {
     //NSURL *assetURL = [info objectForKey:UIImagePickerControllerReferenceURL];
@@ -307,16 +290,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
 }
 
-- (void)add_meta_data:(NSURL *)filepath image:(UIImage *)image :(NSDictionary *)metaData{
-    
-    CGImageDestinationRef img_dest_ref =CGImageDestinationCreateWithURL((__bridge CFURLRef)filepath, kUTTypeJPEG, 1, nil) ;
-    
-    CGImageDestinationAddImage(img_dest_ref, image.CGImage, (__bridge CFDictionaryRef)metaData);
-    
-    CGImageDestinationFinalize(img_dest_ref);
-    
-    CFRelease(img_dest_ref);
-}
 
 - (void) on_handle_with_asseturl:(NSURL*)assetURL picker:(UIImagePickerController *)picker {
     
@@ -362,7 +335,6 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     if ([[segue identifier] isEqualToString:@"segue_photoview"]) {
         [ [segue destinationViewController] set_photo:img_selected];
         [ [segue destinationViewController] set_exif_data:exif_data];
-        [ [segue destinationViewController] set_url_selected:url_selected];
     }
     
 }

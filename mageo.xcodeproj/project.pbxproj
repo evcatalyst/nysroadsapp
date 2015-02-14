@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C430E9B1A8DDB3600897F90 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C430E9A1A8DDB3600897F90 /* libxml2.dylib */; };
-		7C4CC0031A8B242F004138BB /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4CC0021A8B242F004138BB /* libcurl.a */; };
-		7C4CC0051A8B246F004138BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4CC0041A8B246F004138BB /* Security.framework */; };
 		7C54D8DE1A7ABF8D0012471C /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C54D8DD1A7ABF8D0012471C /* PhotoViewController.m */; };
 		7C5DEE431A7B704B001E2C18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5DEE421A7B704B001E2C18 /* MapKit.framework */; };
 		7C5E77D01A7A76440095FB67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E77CF1A7A76440095FB67 /* main.m */; };
 		7C5E77D31A7A76440095FB67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E77D21A7A76440095FB67 /* AppDelegate.m */; };
+		7C5E77D61A7A76440095FB67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E77D51A7A76440095FB67 /* ViewController.m */; };
 		7C5E77D91A7A76440095FB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E77D71A7A76440095FB67 /* Main.storyboard */; };
 		7C5E77DB1A7A76440095FB67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E77DA1A7A76440095FB67 /* Images.xcassets */; };
 		7C5E77DE1A7A76440095FB67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E77DC1A7A76440095FB67 /* LaunchScreen.xib */; };
@@ -21,9 +19,6 @@
 		7C5E77F91A7A823C0095FB67 /* PhotoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E77F81A7A823C0095FB67 /* PhotoSelectViewController.m */; };
 		7C5E77FB1A7A9C150095FB67 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5E77FA1A7A9C150095FB67 /* AssetsLibrary.framework */; };
 		7C679B2F1A7E4E2400109607 /* PhotoAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C679B2E1A7E4E2400109607 /* PhotoAnnotation.m */; };
-		7C693E3D1A8E305B001EEBF6 /* NDHTMLtoPDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C693E3C1A8E305B001EEBF6 /* NDHTMLtoPDF.m */; };
-		7C6C737F1A8C587F00D8E089 /* Mail.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C737E1A8C587F00D8E089 /* Mail.m */; };
-		7C6C73841A8C5C8900D8E089 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6C73831A8C5C8900D8E089 /* MessageUI.framework */; };
 		7C6D3BD61A807D6D00D2977A /* PhotoDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D3BD51A807D6D00D2977A /* PhotoDetailController.m */; };
 		7C7938CC1A88619C005914AB /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7938CB1A88619C005914AB /* GoogleMaps.framework */; };
 		7C7938CF1A8861B7005914AB /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C7938CE1A8861B7005914AB /* GoogleMaps.bundle */; };
@@ -41,30 +36,13 @@
 		7C7CF3101A80922F00C12C91 /* NSDictionary+MetadataDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CF30F1A80922F00C12C91 /* NSDictionary+MetadataDatasource.m */; };
 		7C816A531A89F19500B5C250 /* GmapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C816A521A89F19500B5C250 /* GmapAnnotationView.xib */; };
 		7C816A561A89F43A00B5C250 /* GmapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C816A551A89F43A00B5C250 /* GmapAnnotationView.m */; };
-		7C8754371A8CB81B00F68F61 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8754361A8CB81B00F68F61 /* MobileCoreServices.framework */; };
 		7C9A3D0C1A7D3DF200A77D5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9A3D0B1A7D3DF200A77D5B /* ImageIO.framework */; };
 		7C9A3D0F1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A3D0E1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.m */; };
-		7CA70C6F1A8D92DF00E6F0B8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CA70C6E1A8D92DF00E6F0B8 /* PDFViewController.m */; };
-		7CB7D6EC1A8AE776000B45DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB7D6EB1A8AE776000B45DD /* UIKit.framework */; };
-		7CB7D6EE1A8AE78B000B45DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB7D6ED1A8AE78B000B45DD /* Foundation.framework */; };
-		7CB7D6F01A8AE79A000B45DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB7D6EF1A8AE79A000B45DD /* CoreGraphics.framework */; };
-		7CB7D6F61A8AE865000B45DD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7D6F51A8AE865000B45DD /* MBProgressHUD.m */; };
+		7CBAE8F01A8A33F1002593FD /* Screenshot at Feb 10 14-41-05.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAE8EF1A8A33F1002593FD /* Screenshot at Feb 10 14-41-05.png */; };
 		7CBAE8F31A8A4301002593FD /* PhotoGMSMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAE8F21A8A4301002593FD /* PhotoGMSMarker.m */; };
-		7CC3029C1A8B4D5100152D40 /* RoadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3029B1A8B4D5100152D40 /* RoadDetailViewController.m */; };
 		7CE93E411A7F6E0900F27F8C /* GenericPinAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE93E401A7F6E0900F27F8C /* GenericPinAnnotationView.m */; };
 		7CE93E441A7F6F8E00F27F8C /* PhotoAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE93E431A7F6F8E00F27F8C /* PhotoAnnotationView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXBuildRule section */
-		7C693E3A1A8E2F1C001EEBF6 /* PBXBuildRule */ = {
-			isa = PBXBuildRule;
-			compilerSpec = com.apple.compilers.proxy.script;
-			fileType = pattern.proxy;
-			isEditable = 1;
-			outputFiles = (
-			);
-		};
-/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		7C5E77E41A7A76440095FB67 /* PBXContainerItemProxy */ = {
@@ -77,18 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7C430E9A1A8DDB3600897F90 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		7C4CBFF81A8B242F004138BB /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
-		7C4CBFF91A8B242F004138BB /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
-		7C4CBFFA1A8B242F004138BB /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
-		7C4CBFFB1A8B242F004138BB /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
-		7C4CBFFC1A8B242F004138BB /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
-		7C4CBFFD1A8B242F004138BB /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
-		7C4CBFFE1A8B242F004138BB /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
-		7C4CBFFF1A8B242F004138BB /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
-		7C4CC0001A8B242F004138BB /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
-		7C4CC0021A8B242F004138BB /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
-		7C4CC0041A8B246F004138BB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7C54D8DC1A7ABF8D0012471C /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		7C54D8DD1A7ABF8D0012471C /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		7C5DEE421A7B704B001E2C18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -97,6 +63,8 @@
 		7C5E77CF1A7A76440095FB67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C5E77D11A7A76440095FB67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C5E77D21A7A76440095FB67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C5E77D41A7A76440095FB67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7C5E77D51A7A76440095FB67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C5E77D81A7A76440095FB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C5E77DA1A7A76440095FB67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7C5E77DD1A7A76440095FB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -108,11 +76,6 @@
 		7C5E77FA1A7A9C150095FB67 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7C679B2D1A7E4E2400109607 /* PhotoAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAnnotation.h; sourceTree = "<group>"; };
 		7C679B2E1A7E4E2400109607 /* PhotoAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAnnotation.m; sourceTree = "<group>"; };
-		7C693E3B1A8E305B001EEBF6 /* NDHTMLtoPDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDHTMLtoPDF.h; sourceTree = "<group>"; };
-		7C693E3C1A8E305B001EEBF6 /* NDHTMLtoPDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDHTMLtoPDF.m; sourceTree = "<group>"; };
-		7C6C737D1A8C587F00D8E089 /* Mail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mail.h; sourceTree = "<group>"; };
-		7C6C737E1A8C587F00D8E089 /* Mail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mail.m; sourceTree = "<group>"; };
-		7C6C73831A8C5C8900D8E089 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		7C6D3BD41A807D6D00D2977A /* PhotoDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailController.h; sourceTree = "<group>"; };
 		7C6D3BD51A807D6D00D2977A /* PhotoDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailController.m; sourceTree = "<group>"; };
 		7C7938CB1A88619C005914AB /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
@@ -133,21 +96,12 @@
 		7C816A521A89F19500B5C250 /* GmapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GmapAnnotationView.xib; sourceTree = "<group>"; };
 		7C816A541A89F43A00B5C250 /* GmapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GmapAnnotationView.h; sourceTree = "<group>"; };
 		7C816A551A89F43A00B5C250 /* GmapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GmapAnnotationView.m; sourceTree = "<group>"; };
-		7C8754361A8CB81B00F68F61 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7C9A3D0B1A7D3DF200A77D5B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		7C9A3D0D1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ImageMetadata.h"; sourceTree = "<group>"; };
 		7C9A3D0E1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ImageMetadata.m"; sourceTree = "<group>"; };
-		7CA70C6D1A8D92DF00E6F0B8 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
-		7CA70C6E1A8D92DF00E6F0B8 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
-		7CB7D6EB1A8AE776000B45DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		7CB7D6ED1A8AE78B000B45DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7CB7D6EF1A8AE79A000B45DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7CB7D6F41A8AE865000B45DD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		7CB7D6F51A8AE865000B45DD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		7CBAE8EF1A8A33F1002593FD /* Screenshot at Feb 10 14-41-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot at Feb 10 14-41-05.png"; sourceTree = "<group>"; };
 		7CBAE8F11A8A4301002593FD /* PhotoGMSMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGMSMarker.h; sourceTree = "<group>"; };
 		7CBAE8F21A8A4301002593FD /* PhotoGMSMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGMSMarker.m; sourceTree = "<group>"; };
-		7CC3029A1A8B4D5100152D40 /* RoadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoadDetailViewController.h; sourceTree = "<group>"; };
-		7CC3029B1A8B4D5100152D40 /* RoadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoadDetailViewController.m; sourceTree = "<group>"; };
 		7CE93E3E1A7F670E00F27F8C /* PhotoAnnotationProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAnnotationProtocol.h; sourceTree = "<group>"; };
 		7CE93E3F1A7F6E0900F27F8C /* GenericPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericPinAnnotationView.h; sourceTree = "<group>"; };
 		7CE93E401A7F6E0900F27F8C /* GenericPinAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericPinAnnotationView.m; sourceTree = "<group>"; };
@@ -160,15 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C430E9B1A8DDB3600897F90 /* libxml2.dylib in Frameworks */,
-				7C8754371A8CB81B00F68F61 /* MobileCoreServices.framework in Frameworks */,
-				7C6C73841A8C5C8900D8E089 /* MessageUI.framework in Frameworks */,
-				7C4CC0051A8B246F004138BB /* Security.framework in Frameworks */,
-				7CB7D6F01A8AE79A000B45DD /* CoreGraphics.framework in Frameworks */,
-				7CB7D6EE1A8AE78B000B45DD /* Foundation.framework in Frameworks */,
-				7CB7D6EC1A8AE776000B45DD /* UIKit.framework in Frameworks */,
 				7C7938E51A8862C8005914AB /* SystemConfiguration.framework in Frameworks */,
-				7C4CC0031A8B242F004138BB /* libcurl.a in Frameworks */,
 				7C7938E31A8862B8005914AB /* QuartzCore.framework in Frameworks */,
 				7C7938E11A8862A6005914AB /* OpenGLES.framework in Frameworks */,
 				7C7938DF1A886298005914AB /* libz.dylib in Frameworks */,
@@ -214,42 +160,10 @@
 			name = exif;
 			sourceTree = "<group>";
 		};
-		7C4CBFF61A8B242F004138BB /* curl */ = {
-			isa = PBXGroup;
-			children = (
-				7C4CBFF71A8B242F004138BB /* include */,
-				7C4CC0011A8B242F004138BB /* lib */,
-			);
-			path = curl;
-			sourceTree = "<group>";
-		};
-		7C4CBFF71A8B242F004138BB /* include */ = {
-			isa = PBXGroup;
-			children = (
-				7C4CBFF81A8B242F004138BB /* curl.h */,
-				7C4CBFF91A8B242F004138BB /* curlbuild.h */,
-				7C4CBFFA1A8B242F004138BB /* curlrules.h */,
-				7C4CBFFB1A8B242F004138BB /* curlver.h */,
-				7C4CBFFC1A8B242F004138BB /* easy.h */,
-				7C4CBFFD1A8B242F004138BB /* mprintf.h */,
-				7C4CBFFE1A8B242F004138BB /* multi.h */,
-				7C4CBFFF1A8B242F004138BB /* stdcheaders.h */,
-				7C4CC0001A8B242F004138BB /* typecheck-gcc.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		7C4CC0011A8B242F004138BB /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				7C4CC0021A8B242F004138BB /* libcurl.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
 		7C5E77C11A7A76440095FB67 = {
 			isa = PBXGroup;
 			children = (
+				7CBAE8EF1A8A33F1002593FD /* Screenshot at Feb 10 14-41-05.png */,
 				7C7938CD1A8861AC005914AB /* resources */,
 				7C5E77CC1A7A76440095FB67 /* mageo */,
 				7C5E77E61A7A76440095FB67 /* mageoTests */,
@@ -270,10 +184,6 @@
 		7C5E77CC1A7A76440095FB67 /* mageo */ = {
 			isa = PBXGroup;
 			children = (
-				7CA70C691A8D88F500E6F0B8 /* pdf */,
-				7C6C737C1A8C581E00D8E089 /* email */,
-				7C4CBFF61A8B242F004138BB /* curl */,
-				7CB7D6F71A8AE86D000B45DD /* MBProgressHUD */,
 				7C816A511A89F14C00B5C250 /* googlemap */,
 				7C679B2C1A7E4DDE00109607 /* map */,
 				7C3F86C91A7BE4AF0000E00B /* exif */,
@@ -281,6 +191,8 @@
 				7C5E77F61A7A810B0095FB67 /* View */,
 				7C5E77D11A7A76440095FB67 /* AppDelegate.h */,
 				7C5E77D21A7A76440095FB67 /* AppDelegate.m */,
+				7C5E77D41A7A76440095FB67 /* ViewController.h */,
+				7C5E77D51A7A76440095FB67 /* ViewController.m */,
 				7C5E77D71A7A76440095FB67 /* Main.storyboard */,
 				7C5E77DA1A7A76440095FB67 /* Images.xcassets */,
 				7C5E77DC1A7A76440095FB67 /* LaunchScreen.xib */,
@@ -324,10 +236,6 @@
 				7C54D8DD1A7ABF8D0012471C /* PhotoViewController.m */,
 				7C6D3BD41A807D6D00D2977A /* PhotoDetailController.h */,
 				7C6D3BD51A807D6D00D2977A /* PhotoDetailController.m */,
-				7CC3029A1A8B4D5100152D40 /* RoadDetailViewController.h */,
-				7CC3029B1A8B4D5100152D40 /* RoadDetailViewController.m */,
-				7CA70C6D1A8D92DF00E6F0B8 /* PDFViewController.h */,
-				7CA70C6E1A8D92DF00E6F0B8 /* PDFViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -335,13 +243,6 @@
 		7C5E77FE1A7A9CCA0095FB67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C430E9A1A8DDB3600897F90 /* libxml2.dylib */,
-				7C8754361A8CB81B00F68F61 /* MobileCoreServices.framework */,
-				7C6C73831A8C5C8900D8E089 /* MessageUI.framework */,
-				7C4CC0041A8B246F004138BB /* Security.framework */,
-				7CB7D6EF1A8AE79A000B45DD /* CoreGraphics.framework */,
-				7CB7D6ED1A8AE78B000B45DD /* Foundation.framework */,
-				7CB7D6EB1A8AE776000B45DD /* UIKit.framework */,
 				7C7938E41A8862C8005914AB /* SystemConfiguration.framework */,
 				7C7938E21A8862B8005914AB /* QuartzCore.framework */,
 				7C7938E01A8862A6005914AB /* OpenGLES.framework */,
@@ -375,15 +276,6 @@
 			name = map;
 			sourceTree = "<group>";
 		};
-		7C6C737C1A8C581E00D8E089 /* email */ = {
-			isa = PBXGroup;
-			children = (
-				7C6C737D1A8C587F00D8E089 /* Mail.h */,
-				7C6C737E1A8C587F00D8E089 /* Mail.m */,
-			);
-			name = email;
-			sourceTree = "<group>";
-		};
 		7C7938CD1A8861AC005914AB /* resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,24 +296,6 @@
 			name = googlemap;
 			sourceTree = "<group>";
 		};
-		7CA70C691A8D88F500E6F0B8 /* pdf */ = {
-			isa = PBXGroup;
-			children = (
-				7C693E3B1A8E305B001EEBF6 /* NDHTMLtoPDF.h */,
-				7C693E3C1A8E305B001EEBF6 /* NDHTMLtoPDF.m */,
-			);
-			name = pdf;
-			sourceTree = "<group>";
-		};
-		7CB7D6F71A8AE86D000B45DD /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				7CB7D6F41A8AE865000B45DD /* MBProgressHUD.h */,
-				7CB7D6F51A8AE865000B45DD /* MBProgressHUD.m */,
-			);
-			name = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,7 +308,6 @@
 				7C5E77C81A7A76440095FB67 /* Resources */,
 			);
 			buildRules = (
-				7C693E3A1A8E2F1C001EEBF6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -508,6 +381,7 @@
 				7C5E77DE1A7A76440095FB67 /* LaunchScreen.xib in Resources */,
 				7C816A531A89F19500B5C250 /* GmapAnnotationView.xib in Resources */,
 				7C5E77DB1A7A76440095FB67 /* Images.xcassets in Resources */,
+				7CBAE8F01A8A33F1002593FD /* Screenshot at Feb 10 14-41-05.png in Resources */,
 				7C7938CF1A8861B7005914AB /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,19 +404,15 @@
 				7C7CF3101A80922F00C12C91 /* NSDictionary+MetadataDatasource.m in Sources */,
 				7C816A561A89F43A00B5C250 /* GmapAnnotationView.m in Sources */,
 				7CE93E411A7F6E0900F27F8C /* GenericPinAnnotationView.m in Sources */,
+				7C5E77D61A7A76440095FB67 /* ViewController.m in Sources */,
 				7C5E77D31A7A76440095FB67 /* AppDelegate.m in Sources */,
 				7C5E77D01A7A76440095FB67 /* main.m in Sources */,
 				7CE93E441A7F6F8E00F27F8C /* PhotoAnnotationView.m in Sources */,
-				7C693E3D1A8E305B001EEBF6 /* NDHTMLtoPDF.m in Sources */,
-				7CA70C6F1A8D92DF00E6F0B8 /* PDFViewController.m in Sources */,
-				7CC3029C1A8B4D5100152D40 /* RoadDetailViewController.m in Sources */,
 				7C679B2F1A7E4E2400109607 /* PhotoAnnotation.m in Sources */,
 				7C6D3BD61A807D6D00D2977A /* PhotoDetailController.m in Sources */,
-				7C6C737F1A8C587F00D8E089 /* Mail.m in Sources */,
 				7C5E77F91A7A823C0095FB67 /* PhotoSelectViewController.m in Sources */,
 				7C54D8DE1A7ABF8D0012471C /* PhotoViewController.m in Sources */,
 				7CBAE8F31A8A4301002593FD /* PhotoGMSMarker.m in Sources */,
-				7CB7D6F61A8AE865000B45DD /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,25 +542,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/include/libxml2,
-				);
 				INFOPLIST_FILE = mageo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swallow/Downloads/iphone-exif-0-9.1/Release-iphoneos",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/mageo/lib",
-					"$(PROJECT_DIR)/mageo/curl/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -704,25 +566,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					/usr/include/libxml2,
-				);
 				INFOPLIST_FILE = mageo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/swallow/Downloads/iphone-exif-0-9.1/Release-iphoneos",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/mageo/lib",
-					"$(PROJECT_DIR)/mageo/curl/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
