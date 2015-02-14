@@ -118,5 +118,13 @@
     return [NSString stringWithFormat:@"%@",cell_value ];
 }
 
+- (void)exchangeKey:(NSString *)aKey withKey:(NSString *)aNewKey inMutableDictionary:(NSMutableDictionary *)aDict{
+    
+    if (![aKey isEqualToString:aNewKey]) {
+        id objectToPreserve = [aDict objectForKey:aKey];
+        [aDict setObject:objectToPreserve forKey:aNewKey];
+        [aDict removeObjectForKey:aKey];
+    }
+}
 
 @end

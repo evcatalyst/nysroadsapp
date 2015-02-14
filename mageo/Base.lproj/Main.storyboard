@@ -67,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="54"/>
+            <point key="canvasLocation" x="757" y="202"/>
         </scene>
         <!--Detail-->
         <scene sceneID="vd8-Qn-jno">
@@ -110,7 +110,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSj-U8-A28" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="803"/>
+            <point key="canvasLocation" x="117" y="1862"/>
+        </scene>
+        <!--Road Detail-->
+        <scene sceneID="ZyE-7T-hIO">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="FQj-LF-jiQ" userLabel="Road Detail" customClass="RoadDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cF3-lV-0If"/>
+                        <viewControllerLayoutGuide type="bottom" id="fCk-FM-EK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0le-Ej-dze">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="m8q-pH-4Li">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fCk-FM-EK3" firstAttribute="top" secondItem="m8q-pH-4Li" secondAttribute="bottom" id="1e7-B5-QDE"/>
+                            <constraint firstItem="m8q-pH-4Li" firstAttribute="leading" secondItem="0le-Ej-dze" secondAttribute="leading" id="CRR-9Q-6Cv"/>
+                            <constraint firstItem="m8q-pH-4Li" firstAttribute="top" secondItem="cF3-lV-0If" secondAttribute="bottom" id="TG6-or-2Uf"/>
+                            <constraint firstAttribute="trailing" secondItem="m8q-pH-4Li" secondAttribute="trailing" id="YGN-z9-gWo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableview_road" destination="m8q-pH-4Li" id="gjU-rk-xDD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2v-pp-vRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="1862"/>
+        </scene>
+        <!--PDF View-->
+        <scene sceneID="tAw-Zu-awZ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Aob-SG-0wB" userLabel="PDF View" customClass="PDFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mb1-Fk-AJb"/>
+                        <viewControllerLayoutGuide type="bottom" id="CNa-ni-X0t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iWJ-df-UVe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rT-C5-rM6">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9rT-C5-rM6" firstAttribute="leading" secondItem="iWJ-df-UVe" secondAttribute="leading" id="BvF-O9-2Tn"/>
+                            <constraint firstItem="9rT-C5-rM6" firstAttribute="top" secondItem="mb1-Fk-AJb" secondAttribute="bottom" id="Qa6-qD-a4s"/>
+                            <constraint firstAttribute="trailing" secondItem="9rT-C5-rM6" secondAttribute="trailing" id="Y4L-vm-dQK"/>
+                            <constraint firstItem="CNa-ni-X0t" firstAttribute="top" secondItem="9rT-C5-rM6" secondAttribute="bottom" id="xNV-VO-jfD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview_pdf" destination="9rT-C5-rM6" id="52O-gs-8ub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VT-XU-KYG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402" y="1862"/>
         </scene>
         <!--PhotoView-->
         <scene sceneID="EhH-I2-Ov5">
@@ -174,6 +240,9 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <state key="disabled">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="on_click_btn_pdf:" destination="piZ-9T-o05" eventType="touchUpInside" id="uk8-lC-Qyb"/>
                                                 </connections>
@@ -183,6 +252,9 @@
                                                 <state key="normal" title="Email">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="disabled">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="on_click_btn_email:" destination="piZ-9T-o05" eventType="touchUpInside" id="YDb-cs-5zZ"/>
@@ -232,11 +304,13 @@
                         <outlet property="mapview" destination="uGS-V7-gMF" id="RGg-hq-1q8"/>
                         <outlet property="mapview_container" destination="naP-T0-kJE" id="fS7-7i-3T4"/>
                         <segue destination="WnX-dP-KDa" kind="show" identifier="segue_photo_detail" id="qSY-9a-Bhs"/>
+                        <segue destination="FQj-LF-jiQ" kind="show" identifier="segue_detail_road" id="ac6-lI-GS9"/>
+                        <segue destination="Aob-SG-0wB" kind="show" identifier="segue_show_pdf" id="TX9-hM-SNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aa8-9n-aL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="803"/>
+            <point key="canvasLocation" x="757" y="991"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BdG-Vy-f3J">
@@ -254,7 +328,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEd-Mb-irj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="54"/>
+            <point key="canvasLocation" x="42" y="84"/>
         </scene>
     </scenes>
 </document>

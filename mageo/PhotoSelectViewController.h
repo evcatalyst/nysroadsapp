@@ -17,11 +17,13 @@
     UIActionSheet *actionsheet_photo;
     UIImagePickerController * img_picker;
     UIImage * img_selected;
+    NSURL * url_selected;
     
     NSDictionary * exif_data;
     //EXFMetaData * exif_data;
     
     CLLocationManager * location_manager;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *btn_select_photo;

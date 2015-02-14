@@ -78,7 +78,7 @@
          contextName = "-[PhotoViewController viewDidLoad]:PhotoViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "mapview.frame">
+               value = "[latitude_ref  caseInsensitiveCompare:@&quot;S&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -95,6 +95,22 @@
          <PersistentStrings>
             <PersistentString
                value = "[self annotation]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController replaceCalloutViewForCoordinates:inMap:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "pMapView.selectedMarker">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PhotoViewController hudWasHidden:]:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[dic_data objectForKey:@&quot;Coordinates&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

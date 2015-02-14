@@ -28,4 +28,7 @@
 - (NSString *)sgg_propertyForIndexPath:(NSIndexPath*)indexPath;
 - (NSString*)sgg_valueForPropertyAtIndexPath:(NSIndexPath*)indexPath;
 
+// help methods
+- (void)exchangeKey:(NSString *)aKey withKey:(NSString *)aNewKey inMutableDictionary:(NSMutableDictionary *)aDict;
+
 @end

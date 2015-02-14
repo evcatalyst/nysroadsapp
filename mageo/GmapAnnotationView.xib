@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="270" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot at Feb 10 14-41-05.png" translatesAutoresizingMaskIntoConstraints="NO" id="cZg-0G-1OB">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZg-0G-1OB">
                     <rect key="frame" x="20" y="11" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="cET-o0-YdE"/>
@@ -56,10 +56,20 @@
                         <action selector="on_click_btn_disclosure:" destination="iN0-l3-epB" eventType="touchUpInside" id="zdV-Qr-Iyx"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63l-yc-lhd" userLabel="Button(Road)">
+                    <rect key="frame" x="196" y="58" width="22" height="22"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="on_click_btn_road:" destination="iN0-l3-epB" eventType="touchUpInside" id="iv9-kO-BmI"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="Ver-PU-xAo" firstAttribute="leading" secondItem="WU1-kd-kXU" secondAttribute="leading" id="BSR-IF-d9p"/>
                 <constraint firstItem="rfJ-oG-Frd" firstAttribute="leading" secondItem="Ver-PU-xAo" secondAttribute="leading" id="HS8-BO-YpU"/>
+                <constraint firstItem="63l-yc-lhd" firstAttribute="top" secondItem="Zpi-hK-kJy" secondAttribute="top" id="JhL-wF-MVD"/>
                 <constraint firstItem="WU1-kd-kXU" firstAttribute="top" secondItem="cZg-0G-1OB" secondAttribute="top" constant="5" id="L91-me-lUu"/>
                 <constraint firstItem="Ver-PU-xAo" firstAttribute="top" secondItem="WU1-kd-kXU" secondAttribute="bottom" constant="5" id="OJY-0V-C28"/>
                 <constraint firstAttribute="bottom" secondItem="Zpi-hK-kJy" secondAttribute="bottom" constant="40" id="OOX-2E-hup"/>
@@ -68,6 +78,7 @@
                 <constraint firstItem="WU1-kd-kXU" firstAttribute="leading" secondItem="cZg-0G-1OB" secondAttribute="trailing" constant="10" id="VUU-Qc-tbE" userLabel="Leading Alignment - (130) - Label - Screenshot at Feb 10 14-41-05.png"/>
                 <constraint firstAttribute="trailing" secondItem="Zpi-hK-kJy" secondAttribute="trailing" constant="20" id="YOs-HK-CGT"/>
                 <constraint firstItem="cZg-0G-1OB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jOC-54-Jrf"/>
+                <constraint firstItem="63l-yc-lhd" firstAttribute="trailing" secondItem="Zpi-hK-kJy" secondAttribute="leading" constant="-10" id="s53-uZ-Zb1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -77,10 +88,7 @@
                 <outlet property="lbl_longitude" destination="rfJ-oG-Frd" id="xL3-vf-4LS"/>
                 <outlet property="lbl_subject" destination="WU1-kd-kXU" id="6eJ-tR-Swa"/>
             </connections>
-            <point key="canvasLocation" x="309" y="-94"/>
+            <point key="canvasLocation" x="-95" y="-89"/>
         </view>
     </objects>
-    <resources>
-        <image name="Screenshot at Feb 10 14-41-05.png" width="181" height="189"/>
-    </resources>
 </document>

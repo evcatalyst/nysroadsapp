@@ -10,15 +10,7 @@
 
 @implementation GmapAnnotationView
 
-@synthesize lbl_subject, lbl_latitude, lbl_longitude, onDisclosureTappedBlock, btn_disclosure;
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+@synthesize lbl_subject, lbl_latitude, lbl_longitude, onDisclosureTappedBlock, btn_disclosure, onRoadTappedBlock;
 
 
 - (void)drawRect:(CGRect)rect{
@@ -140,9 +132,9 @@
     
 }
 
-- (void)initialize{
+/*- (void)initialize{
     [self.btn_disclosure addTarget: self action:@selector(on_click_btn_disclosure:) forControlEvents: UIControlEventTouchUpInside | UIControlEventTouchCancel];
-}
+}*/
 
 - (IBAction)on_click_btn_disclosure:(id)sender {
     if ( onDisclosureTappedBlock ) {
@@ -150,11 +142,11 @@
     }
 }
 
-- (IBAction)calloutAccessoryTapped:(id)sender
-{
-    /*if (_onCalloutAccessoryTapped)
-    {
-        _onCalloutAccessoryTapped();
-    }*/
+- (IBAction)on_click_btn_road:(id)sender {
+    if ( onRoadTappedBlock ) {
+        onRoadTappedBlock();
+    }
 }
+
+
 @end
