@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2F0AD41A8FE7D900D73791 /* StreetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F0AD31A8FE7D900D73791 /* StreetViewController.m */; };
 		7C430E9B1A8DDB3600897F90 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C430E9A1A8DDB3600897F90 /* libxml2.dylib */; };
 		7C4CC0031A8B242F004138BB /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4CC0021A8B242F004138BB /* libcurl.a */; };
 		7C4CC0051A8B246F004138BB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4CC0041A8B246F004138BB /* Security.framework */; };
@@ -41,6 +42,7 @@
 		7C7CF3101A80922F00C12C91 /* NSDictionary+MetadataDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7CF30F1A80922F00C12C91 /* NSDictionary+MetadataDatasource.m */; };
 		7C816A531A89F19500B5C250 /* GmapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C816A521A89F19500B5C250 /* GmapAnnotationView.xib */; };
 		7C816A561A89F43A00B5C250 /* GmapAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C816A551A89F43A00B5C250 /* GmapAnnotationView.m */; };
+		7C854B1D1A981F0500ED2AF0 /* StreetStaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C854B1C1A981F0500ED2AF0 /* StreetStaticViewController.m */; };
 		7C8754371A8CB81B00F68F61 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8754361A8CB81B00F68F61 /* MobileCoreServices.framework */; };
 		7C9A3D0C1A7D3DF200A77D5B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9A3D0B1A7D3DF200A77D5B /* ImageIO.framework */; };
 		7C9A3D0F1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A3D0E1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.m */; };
@@ -77,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C2F0AD21A8FE7D900D73791 /* StreetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetViewController.h; sourceTree = "<group>"; };
+		7C2F0AD31A8FE7D900D73791 /* StreetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetViewController.m; sourceTree = "<group>"; };
 		7C430E9A1A8DDB3600897F90 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		7C4CBFF81A8B242F004138BB /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
 		7C4CBFF91A8B242F004138BB /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		7C816A521A89F19500B5C250 /* GmapAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GmapAnnotationView.xib; sourceTree = "<group>"; };
 		7C816A541A89F43A00B5C250 /* GmapAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GmapAnnotationView.h; sourceTree = "<group>"; };
 		7C816A551A89F43A00B5C250 /* GmapAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GmapAnnotationView.m; sourceTree = "<group>"; };
+		7C854B1B1A981F0500ED2AF0 /* StreetStaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetStaticViewController.h; sourceTree = "<group>"; };
+		7C854B1C1A981F0500ED2AF0 /* StreetStaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StreetStaticViewController.m; sourceTree = "<group>"; };
 		7C8754361A8CB81B00F68F61 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7C9A3D0B1A7D3DF200A77D5B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		7C9A3D0D1A7D575F00A77D5B /* NSMutableDictionary+ImageMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ImageMetadata.h"; sourceTree = "<group>"; };
@@ -328,6 +334,10 @@
 				7CC3029B1A8B4D5100152D40 /* RoadDetailViewController.m */,
 				7CA70C6D1A8D92DF00E6F0B8 /* PDFViewController.h */,
 				7CA70C6E1A8D92DF00E6F0B8 /* PDFViewController.m */,
+				7C2F0AD21A8FE7D900D73791 /* StreetViewController.h */,
+				7C2F0AD31A8FE7D900D73791 /* StreetViewController.m */,
+				7C854B1B1A981F0500ED2AF0 /* StreetStaticViewController.h */,
+				7C854B1C1A981F0500ED2AF0 /* StreetStaticViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -533,6 +543,7 @@
 				7C5E77D31A7A76440095FB67 /* AppDelegate.m in Sources */,
 				7C5E77D01A7A76440095FB67 /* main.m in Sources */,
 				7CE93E441A7F6F8E00F27F8C /* PhotoAnnotationView.m in Sources */,
+				7C2F0AD41A8FE7D900D73791 /* StreetViewController.m in Sources */,
 				7C693E3D1A8E305B001EEBF6 /* NDHTMLtoPDF.m in Sources */,
 				7CA70C6F1A8D92DF00E6F0B8 /* PDFViewController.m in Sources */,
 				7CC3029C1A8B4D5100152D40 /* RoadDetailViewController.m in Sources */,
@@ -541,6 +552,7 @@
 				7C6C737F1A8C587F00D8E089 /* Mail.m in Sources */,
 				7C5E77F91A7A823C0095FB67 /* PhotoSelectViewController.m in Sources */,
 				7C54D8DE1A7ABF8D0012471C /* PhotoViewController.m in Sources */,
+				7C854B1D1A981F0500ED2AF0 /* StreetStaticViewController.m in Sources */,
 				7CBAE8F31A8A4301002593FD /* PhotoGMSMarker.m in Sources */,
 				7CB7D6F61A8AE865000B45DD /* MBProgressHUD.m in Sources */,
 			);

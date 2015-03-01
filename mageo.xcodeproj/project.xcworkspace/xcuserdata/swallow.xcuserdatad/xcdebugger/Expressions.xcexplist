@@ -11,6 +11,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[StreetStaticViewController loading_img_street]:StreetStaticViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "img_street.frame.size">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[PhotoSelectViewController imagePickerController:didFinishPickingMediaWithInfo:]:PhotoSelectViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -51,14 +59,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "__49-[PhotoViewController mapView:viewForAnnotation:]_block_invoke:PhotoViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "self">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "-[PhotoSelectViewController locationManager:didUpdateLocations:]:PhotoSelectViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -83,6 +83,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__49-[PhotoViewController mapView:viewForAnnotation:]_block_invoke:PhotoViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[PhotoViewController mapView:didDeselectAnnotationView:]:PhotoViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -95,6 +103,14 @@
          <PersistentStrings>
             <PersistentString
                value = "[self annotation]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[StreetStaticViewController hudWasHidden:]:StreetStaticViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "img_street.frame.size">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

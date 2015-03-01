@@ -22,6 +22,9 @@
 
 #import <math.h>
 
+#import "StreetViewController.h"
+#import "StreetStaticViewController.h"
+
 #define URLGetNearByRoads "http://getnearbyroads.azurewebsites.net/api/gis/GetNearByRoads"
 
 #define ACTION_DETAIL_ROAD 0
@@ -38,7 +41,7 @@
 
 @synthesize btn_map;
 @synthesize btn_pdf;
-@synthesize btn_email;
+@synthesize btn_email, btn_street;
 
 size_t writefunc(void *ptr, size_t size, size_t nmemb, NSMutableData * s )
 {
@@ -246,6 +249,7 @@ size_t writefunc(void *ptr, size_t size, size_t nmemb, NSMutableData * s )
     [btn_map setEnabled:has_gps];
     [btn_pdf setEnabled:has_gps];
     [btn_email setEnabled:has_gps];
+    [btn_street setEnabled:has_gps];
     
     if ( has_gps ) {
         
@@ -271,6 +275,12 @@ size_t writefunc(void *ptr, size_t size, size_t nmemb, NSMutableData * s )
             longitude_photo = longitude = ( -1 * longitude );
         }
         
+        heading_photo = [ [ gps_data objectForKey:@"ImgDirection" ] doubleValue ];
+        NSString * heading_ref = [ gps_data objectForKey:@"ImgDirectionRef" ] ;
+        if ( ![heading_ref isEqual:@"T" ]) {
+            heading_photo = (-1* heading_photo);
+        }
+        
         CLLocationCoordinate2D gps_pos = CLLocationCoordinate2DMake(latitude, longitude);
         
         /*panoView = [[GMSPanoramaView alloc] initWithFrame:CGRectZero];
@@ -278,8 +288,8 @@ size_t writefunc(void *ptr, size_t size, size_t nmemb, NSMutableData * s )
         [mapview_container addSubview:panoView];
         panoView.frame = mapview.frame;
         
-        [panoView moveNearCoordinate:CLLocationCoordinate2DMake(42.663913333333, 73.7694999999)];*/
-        //[panoView moveNearCoordinate:gps_pos];
+        //[panoView moveNearCoordinate:CLLocationCoordinate2DMake(42.663913333333, 73.7694999999)];
+        [panoView moveNearCoordinate:gps_pos];*/
 
         
         GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:latitude
@@ -391,6 +401,23 @@ didChangeCameraPosition: (GMSCameraPosition *)position
 }
 
 - (void) set_exif_data:(NSDictionary *)ed{
+    
+    NSDictionary * gps_data = [ed objectForKey:@"{GPS}"];
+    
+    double imgDirection = [ [gps_data objectForKey:@"ImgDirection"] doubleValue ];
+    
+    NSString * imgDirectionRef = [gps_data objectForKey:@"ImgDirectionRef"];
+    
+    if ( [imgDirectionRef isEqualToString:@"T"] ) {
+        if ( imgDirection < 180.0f ) {
+            imgDirection += 180.0f;
+        }else{
+            imgDirection -= 180.0f;
+        }
+    }
+    
+    [ gps_data setValue:[NSNumber numberWithDouble:imgDirection] forKey:@"ImgDirection" ];
+    
     exif_data = ed;
 }
 
@@ -430,6 +457,11 @@ didChangeCameraPosition: (GMSCameraPosition *)position
     }
     
     [self send_email];
+}
+
+- (IBAction)on_click_btn_street:(id)sender {
+    //[ self performSegueWithIdentifier:@"segue_show_street" sender:self ];
+    [ self performSegueWithIdentifier:@"segue_show_street_static" sender:self ];
 }
 
 - (void)on_show_map{
@@ -488,6 +520,16 @@ didChangeCameraPosition: (GMSCameraPosition *)position
         [ [segue destinationViewController] setTable_road_data:table_road_data];
     }else if ([[segue identifier] isEqualToString:@"segue_show_pdf" ] ){
         [ [segue destinationViewController] setFilepath_pdf:filepath_pdf];
+    }else if( [[segue identifier] isEqualToString:@"segue_show_street"] ){
+        StreetViewController * st_view = [segue destinationViewController];
+        [ st_view setLatitude:latitude_photo];
+        [ st_view setLongitude:longitude_photo];
+        [ st_view setHeading:heading_photo];
+    }else if( [[segue identifier] isEqualToString:@"segue_show_street_static"] ){
+        StreetStaticViewController * st_view = [segue destinationViewController];
+        [ st_view setLatitude:latitude_photo];
+        [ st_view setLongitude:longitude_photo];
+        [ st_view setHeading:heading_photo];
     }
     
 }

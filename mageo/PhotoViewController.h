@@ -41,6 +41,7 @@
     
     double latitude_photo;
     double longitude_photo;
+    double heading_photo;
     
     //PhotoAnnotation * annotation_photo;
     //MKAnnotationView * annotation_view_selected;
@@ -69,6 +70,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn_map;
 @property (weak, nonatomic) IBOutlet UIButton *btn_pdf;
 @property (weak, nonatomic) IBOutlet UIButton *btn_email;
+@property (weak, nonatomic) IBOutlet UIButton *btn_street;
 
 @property (nonatomic, strong) NDHTMLtoPDF *PDFCreator;
 
@@ -79,5 +81,6 @@
 - (IBAction)on_click_btn_map:(id)sender;
 - (IBAction)on_click_btn_pdf:(id)sender;
 - (IBAction)on_click_btn_email:(id)sender;
+- (IBAction)on_click_btn_street:(id)sender;
 
 @end
